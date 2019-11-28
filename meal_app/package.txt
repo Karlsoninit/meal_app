@@ -1,0 +1,6 @@
+//AppLoading 
+https://docs.expo.io/versions/v35.0.0/sdk/app-loading/
+
+//react navigation 'only for native react'
+https://www.udemy.com/course/react-native-the-practical-guide/learn/lecture/16064248#overview // before use navigation you need download some package
+https://reactnavigation.org/

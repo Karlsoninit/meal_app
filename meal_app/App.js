@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Font from "expo-font";
 import AppLoading from "expo";
@@ -11,6 +11,15 @@ const fetchFonts = () => {
 };
 
 export default function App() {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  if (!fontLoaded) {
+    <AppLoading
+      startAsync={fetchFonts}
+      onFinish={() => setFontLoaded(false)}
+    />;
+  }
+
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
